@@ -1,0 +1,44 @@
+#services-collapse {
+    background: #f0f0f0;
+
+    img {
+        border-radius: .50rem;
+    }
+
+    .card {
+        margin-bottom: 5px;
+    }
+
+    .card-header {
+        background: transparent;
+    }
+
+    .card-header button {
+        color: $primary-color;
+        font-weight: bold;
+        font-family: $primary-font;
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $secondary-color;
+        }
+    }
+
+    .card-header:first-child {
+        border-left: 3px solid $primary-color;
+    }
+
+    .card-body {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        padding: 1.25rem;
+        border-left: 3px solid $primary-color;
+    }
+
+    @media screen and (max-width: 575px) {
+        .accordion {
+            margin-bottom: 30px;
+        }
+    }
+}

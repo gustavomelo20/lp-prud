@@ -1,0 +1,15 @@
+#about {
+    background: #fff;
+    margin-top: 0;
+    position: relative;
+
+    .h1-title {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 575px) {
+        img {
+            margin-bottom: 30px;
+        }
+    }
+}

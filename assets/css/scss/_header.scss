@@ -1,0 +1,66 @@
+header {
+    margin-bottom: 0;
+    background: white;
+    box-shadow: 1px 1px 10px -2px #575757;
+
+    nav {
+        padding: 3px !important;
+
+        .navbar-brand {
+            margin: auto;
+
+            img {
+                max-width: 175px;
+            }
+        }
+
+        li a {
+            color: $primary-color;
+            font-weight: bold;
+            text-transform: uppercase !important;
+            font-size: 16px;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+
+        .navbar-toggler {
+            border: 1px solid #eb6e26;
+        }
+
+        .show {
+            background: white;
+        }
+
+        .navbar-toggler-icon {
+            background: url('../img/hamburger.png');
+            background-size: 100% 100% !important;
+        }
+    }
+
+    .navbar-phone {
+        text-align: center;
+        margin-top: 28px;
+
+        @media screen and (max-width: 992px) {
+            display: none;
+        }
+
+        span,
+        a {
+            color: $primary-color;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        a {
+            color: white;
+            padding: 5px;
+            background: $primary-color;
+            font-weight: bold;
+            font-size: 22px;
+            @include border-radius(.5rem, .5rem, .5rem, .5rem);
+        }
+    }
+}
